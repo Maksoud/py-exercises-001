@@ -4,10 +4,7 @@
 def paper_doll(text):
     result = []
     for letter in text:
-        i = 1
-        while i <= 3:
-            result.append(letter)
-            i += 1
+        result.append(letter*3)
     return "".join(result)
 
 # Check

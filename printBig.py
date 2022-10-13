@@ -1,46 +1,38 @@
 # Write a function that takes in a single letter, and returns a 5x5 representation of that letter
 
-dictA = """
+bigLetters = {
+    "a":"""
    *  
   * * 
  *****
  *   *
  *   *
-"""
-dictB = """
+""",
+    "b":"""
  ****
  *   *
  ****
  *   *
-****
-"""
-dictC = """
+ ****
+""",
+    "c":"""
   **** 
  *    *
  *
  *    *
   ****
-"""
-dictD = """
+""",
+    "d":"""
  ****
  *   *
  *    *
  *   *
  ****
 """
+}
 
 def print_big(letter):
-    match letter.lower():
-        case "a":
-            return dictA
-        case "b":
-            return dictB
-        case "c":
-            return dictC
-        case "d":
-            return dictD
-        case _:
-            return "not found!"
+    return bigLetters[letter.lower()]
 
 result1 = print_big('a')
 print(result1)

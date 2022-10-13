@@ -9,7 +9,7 @@ def summer_69(arr):
 
     for num in arr:
 
-        if (ignore == False):
+        if not ignore:
             if (num == 6): 
                 ignore = True
             else:

@@ -1,7 +1,7 @@
 # Given an integer n, return True if n is within 10 of either 100 or 200
 
 def almost_there(n):
-    return True if (n >= (100 - 10) and n <= (100 + 10)) or (n >= (200 - 10) and n <= (200 + 10)) else False
+    return (n >= (100 - 10) and n <= (100 + 10)) or (n >= (200 - 10) and n <= (200 + 10))
 
 # Check
 result1 = almost_there(90)

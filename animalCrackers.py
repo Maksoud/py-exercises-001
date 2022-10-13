@@ -2,8 +2,8 @@
 # and returns True if both words begin with same letter
 
 def animal_crackers(text):
-    splitted = text.split()
-    return True if splitted[0][0] == splitted[1][0] else False
+    splitted = text.lower().split()
+    return splitted[0][0] == splitted[1][0]
 
 # Check
 result1 = animal_crackers('Levelheaded Llama')

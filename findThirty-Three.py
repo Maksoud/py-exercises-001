@@ -2,9 +2,11 @@
 
 def has_33(nums):
     for idx, num in enumerate(nums):
-        print(idx, num)
+        # print(idx, num)
+        # alternative solution
+        # if nums[i:i+2] == [3,3]
         if idx > 0:
-            result = True if (nums[idx-1] == 3 and num == 3) else False
+            result = (nums[idx-1] == 3 and num == 3)
     return result
 
 # Check
